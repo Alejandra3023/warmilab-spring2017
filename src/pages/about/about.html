@@ -15,8 +15,11 @@
   </div>
   <div>
 
-  <h2>Alejandra Carrasco</h2>
+  <h2>{{datos.nombre}}</h2>
+  <p>{{datos.ocupacion}}</p>
+  <p> {{datos.edad}}</p>
     <p> 10th grade </p>
+
 
   </div>
   <!-- lista de datos a partir de aqui -->
@@ -26,24 +29,25 @@
   <ion-list no-lines>
     <ion-item>
       <ion-icon name="flag" item-start></ion-icon>
-      <h3>origen</h3>
-      <p>Lima, Peru</p>
+      <h3>{{personalinfo.origen}}</h3>
+
     </ion-item>
     <ion-item>
       <ion-icon name="mail" item-start></ion-icon>
-      <h3>Email</h3>
-      <p>acarrascoalayo1@gmail.com</p>
-    </ion-item>
-    <ion-item>
+      <h3>{{personalinfo.email}}</h3>
+       </ion-item>
+
+      <ion-item>
        <ion-icon name="phone-portrait" item-start></ion-icon>
-      <h3>Telefono</h3>
-       <p> 952876008</p>
-    </ion-item>
+        <h3>{{personalinfo.telefono}}</h3>
+         </ion-item>
   </ion-list>
+
 </ion-slide>
+
 <ion-slide>
 <p>
-  Hi, my name is Alejandra and I'm hooked on universe :)
+  Hi, my name is Alejandra, I'm {{datos.edad}} and I'm hooked on {{datos.adjetive}} :)
 </p>
 </ion-slide>
 
